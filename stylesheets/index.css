@@ -1,0 +1,211 @@
+/* line 3, ../sass/index.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../sass/index.scss */
+html {
+  background: url("C:/Users/gmnat/Documents/BeerJS/homepage/images/07.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 17, ../sass/index.scss */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 22, ../sass/index.scss */
+.absolute-center, .menu, .menu .btn .fa, .menu .btn.trigger .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 28, ../sass/index.scss */
+.menu {
+  width: 5em;
+  height: 5em;
+}
+/* line 33, ../sass/index.scss */
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  transform: translateX(0);
+}
+/* line 47, ../sass/index.scss */
+.menu .btn a:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 51, ../sass/index.scss */
+.menu .btn .fa {
+  font-size: 3em;
+  transition: color 0.3s;
+}
+/* line 57, ../sass/index.scss */
+.menu .btn:hover .fa {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 61, ../sass/index.scss */
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+/* line 67, ../sass/index.scss */
+.menu .btn.trigger:hover {
+  transform: scale(1.2);
+}
+/* line 70, ../sass/index.scss */
+.menu .btn.trigger:hover .line {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 73, ../sass/index.scss */
+.menu .btn.trigger:hover .line:before, .menu .btn.trigger:hover .line:after {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 79, ../sass/index.scss */
+.menu .btn.trigger .line {
+  width: 60%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+/* line 87, ../sass/index.scss */
+.menu .btn.trigger .line:before, .menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+/* line 98, ../sass/index.scss */
+.menu .btn.trigger .line:before {
+  top: -12px;
+  transform-origin: 15% 100%;
+}
+/* line 102, ../sass/index.scss */
+.menu .btn.trigger .line:after {
+  top: 12px;
+  transform-origin: 25% 30%;
+}
+/* line 110, ../sass/index.scss */
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+/* line 121, ../sass/index.scss */
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+/* line 128, ../sass/index.scss */
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+/* line 132, ../sass/index.scss */
+.menu.active .trigger .line:before {
+  transform: rotate(45deg);
+  width: 110%;
+}
+/* line 136, ../sass/index.scss */
+.menu.active .trigger .line:after {
+  transform: rotate(-45deg);
+  width: 110%;
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(1) {
+  transform: rotate(-25.71429deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(1) .btn-icon {
+  transform: translateY(-10em) rotate(25.71429deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(2) {
+  transform: rotate(25.71429deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(2) .btn-icon {
+  transform: translateY(-10em) rotate(-25.71429deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(3) {
+  transform: rotate(77.14286deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(3) .btn-icon {
+  transform: translateY(-10em) rotate(-77.14286deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(4) {
+  transform: rotate(128.57143deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(4) .btn-icon {
+  transform: translateY(-10em) rotate(-128.57143deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(5) .btn-icon {
+  transform: translateY(-10em) rotate(-180deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(6) {
+  transform: rotate(231.42857deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(6) .btn-icon {
+  transform: translateY(-10em) rotate(-231.42857deg);
+}
+
+/* line 149, ../sass/index.scss */
+.rotater:nth-child(7) {
+  transform: rotate(282.85714deg);
+}
+
+/* line 154, ../sass/index.scss */
+.menu.active .rotater:nth-child(7) .btn-icon {
+  transform: translateY(-10em) rotate(-282.85714deg);
+}
