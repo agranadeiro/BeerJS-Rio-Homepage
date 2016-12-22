@@ -7,7 +7,7 @@
 
 /* line 9, ../sass/index.scss */
 html {
-  background: url("C:/Users/gmnat/Documents/BeerJS/homepage/images/07.jpg") no-repeat center center fixed;
+  background: url("../images/07.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
