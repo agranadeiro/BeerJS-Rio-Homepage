@@ -7,73 +7,146 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BeerJS Rio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>    
-    <script src="./javascripts/index-menu.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>BeerJS Rio</title>
+<meta name="description" content="Site oficial do BeerJs-Rio ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+<script src="./javascripts/index-menu.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="menu">
-        <div class="btn trigger">
-            <span class="line"></span>
-        </div>
-        <div class="icons">
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <a href="index.html" target="_parent">
-                        <i class="fa fa-home"></i>
-                    </a>
-                </div>
-            </div>     
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <i class="fa fa-info"></i>
-                </div>
-            </div>                   
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <a href="https://www.instagram.com/beerjsrio/" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <a href="https://beerjs-slack-invite.herokuapp.com/" target="_blank">
-                        <i class="fa fa-slack"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <a href="https://www.meetup.com/pt-BR/BeerJS-Rio/" target="_blank">
-                        <i class="fa fa-meetup"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <i class="fa fa-paper-plane"></i>
-                </div>
-            </div>            
-            <div class="rotater">
-                <div class="btn btn-icon">
-                    <a href="https://github.com/beerjs/rio" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="menu">
+		<div class="btn trigger">
+			<span class="line"></span>
+		</div>
+		<div class="icons">
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="index.html" target="_parent"> <i class="fa fa-home"></i>
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="#" data-toggle="modal" data-target="#modalSobre"> 
+					<i class="fa fa-info"></i>
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="https://www.instagram.com/beerjsrio/" target="_blank">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="https://beerjs-slack-invite.herokuapp.com/"
+						target="_blank"> <i class="fa fa-slack"></i>
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="https://www.meetup.com/pt-BR/BeerJS-Rio/" target="_blank">
+						<i class="fa fa-meetup"></i>
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+				<a href="#" data-toggle="modal" data-target="#modalContato"> 
+					<i class="fa fa-paper-plane"></i>
+				</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="https://github.com/beerjs/rio" target="_blank"> <i
+						class="fa fa-github"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal/Sobre -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="modalSobre">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title">Sobre</h5>
+				</div>
+				<div id="travolta" class="modal-body">Lorem ipsum dolor sit
+					amet, consectetur adipiscing elit. Etiam laoreet nec diam eget
+					mattis. Pellentesque sit amet lacus sit amet nunc sodales iaculis.
+					Vestibulum maximus sed massa id commodo. Nullam eget mattis sapien,
+					a sagittis turpis. Quisque tincidunt purus eu ipsum eleifend
+					congue. Nunc pharetra finibus eros quis aliquet. Pellentesque
+					aliquet lacus et commodo consequat. Cras semper turpis mi, non
+					finibus sapien cursus eget. Vestibulum molestie auctor odio et
+					varius. Sed at orci ullamcorper, malesuada dolor id, pretium erat.
+					Curabitur eget mi ante. Nulla eu placerat mi. Curabitur ac egestas
+					nunc. Nam laoreet, libero ut pulvinar pharetra, massa eros pharetra
+					dolor, et scelerisque nisi nunc tempus tellus. Sed egestas mauris a
+					tempor pellentesque. Quisque sed erat at quam dapibus lobortis.
+					Morbi quis porttitor justo, sed accumsan dolor. Donec vel dapibus
+					ligula. Donec placerat consectetur mi, sit amet malesuada magna
+					vestibulum consequat.</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal/Contato -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="modalContato">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title">Contato</h5>
+				</div>
+				<div id="travolta" class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="nome">Nome</label> <input type="nome"
+								class="form-control" id="nome" placeholder="Seu nome...">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label> <input type="email"
+								class="form-control" id="email" aria-describedby="emailHelp"
+								placeholder="Seu email..."> <small id="emailHelp"
+								class="form-text text-muted">Não compartilharemos seu
+								e-mail com ninguém.</small>
+						</div>
+						<div class="form-group">
+							<label for="mensagem">Mensagem</label>
+							<textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem..."></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
