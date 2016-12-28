@@ -1,7 +1,7 @@
 $(function() {
 
 	//Click do btEnvia
-	$('#btEnvia').on('click',function() {
+	$('#btEnviar').on('click',function() {
 		var data = {
 		    name: $("nome").val(),
 		    email: $("email").val(),
