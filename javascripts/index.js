@@ -15,16 +15,18 @@ $(function() {
 			type: "POST",
 			url: "mail/envia.php",
 			data: data,
-			success: function(){			
-				$('#msgEmail').innerText = "Enviado com sucesso!";
+			success: function(data){			
+				$('#msgEmail')[0].innerText = "Enviado com sucesso!";
 				$('#msgEmail').attr('class','alert alert-success')
 				$('nome').val("");
 				$('email').val("");
-				$('mensagem').val(""); 
+				$('mensagem').val("");
+				alert(data);
 			},
 			error: function(){
-				$('#msgEmail').innerText = "Erro ao enviar email. Por favor, tente mais tarde.";
-				$('#msgEmail').attr('class','alert alert-danger')			
+				$('#msgEmail')[0].innerText = "Erro ao enviar email. Por favor, tente mais tarde.";
+				$('#msgEmail').attr('class','alert alert-danger');
+				alert(data);
 			}
 		});
 		
