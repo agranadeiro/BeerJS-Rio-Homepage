@@ -17,14 +17,14 @@ $(function() {
 			data: data,
 			success: function(){			
 				$('#msgEmail').innerText = "Enviado com sucesso!";
-				$('#msgEmail').attr('alert-success','alert-success')
+				$('#msgEmail').attr('class','alert-success')
 				$('nome').val("");
 				$('email').val("");
 				$('mensagem').val(""); 
 			},
 			error: function(){
 				$('#msgEmail').innerText = "Erro ao enviar email. Por favor, tente mais tarde.";
-				$('#msgEmail').attr('alert-success','alert-danger')			
+				$('#msgEmail').attr('class','alert-danger')			
 			}
 		});
 		
