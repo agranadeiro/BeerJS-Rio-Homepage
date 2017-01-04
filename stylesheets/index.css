@@ -50,9 +50,9 @@ html, body {
   transform: translateX(0);
 }
 /* line 47, ../sass/index.scss */
-a, a:visited, a:active, a:focus {
-  color: rgba(0, 0, 0, 1);
-}
+.menu .btn a:visited {		
+  color: rgba(0, 0, 0, 0.7);
+ }
 /* line 51, ../sass/index.scss */
 .menu .btn .fa {
   font-size: 3em;
@@ -104,12 +104,12 @@ a, a:visited, a:active, a:focus {
 /* line 98, ../sass/index.scss */
 .menu .btn.trigger .line:before {
   top: -12px;
-  transform-origin: 10% 100%;
+  transform-origin: 15% 100%;
 }
 /* line 102, ../sass/index.scss */
 .menu .btn.trigger .line:after {
   top: 12px;
-  transform-origin: 20% 30%;
+  transform-origin: 25% 30%;
 }
 /* line 110, ../sass/index.scss */
 .menu .rotater {
