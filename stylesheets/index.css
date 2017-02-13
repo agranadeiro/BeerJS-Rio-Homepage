@@ -141,74 +141,84 @@ a, a:visited, a:active, a:focus {
   width: 110%;
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(1) {
-  transform: rotate(-25.71429deg);
+  transform: rotate(-22.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(1) .btn-icon {
-  transform: translateY(-10em) rotate(25.71429deg);
+  transform: translateY(-10em) rotate(22.5deg);
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(2) {
-  transform: rotate(25.71429deg);
+  transform: rotate(22.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(2) .btn-icon {
-  transform: translateY(-10em) rotate(-25.71429deg);
+  transform: translateY(-10em) rotate(-22.5deg);
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(3) {
-  transform: rotate(77.14286deg);
+  transform: rotate(67.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(3) .btn-icon {
-  transform: translateY(-10em) rotate(-77.14286deg);
+  transform: translateY(-10em) rotate(-67.5deg);
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(4) {
-  transform: rotate(128.57143deg);
+  transform: rotate(112.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(4) .btn-icon {
-  transform: translateY(-10em) rotate(-128.57143deg);
+  transform: translateY(-10em) rotate(-112.5deg);
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(5) {
-  transform: rotate(180deg);
+  transform: rotate(157.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(5) .btn-icon {
-  transform: translateY(-10em) rotate(-180deg);
+  transform: translateY(-10em) rotate(-157.5deg);
 }
 
-/* line 149, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .rotater:nth-child(6) {
-  transform: rotate(231.42857deg);
+  transform: rotate(202.5deg);
 }
 
-/* line 154, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(6) .btn-icon {
-  transform: translateY(-10em) rotate(-231.42857deg);
-}
-
-/* line 149, ../sass/index.scss */
-.rotater:nth-child(7) {
-  transform: rotate(282.85714deg);
+  transform: translateY(-10em) rotate(-202.5deg);
 }
 
 /* line 154, ../sass/index.scss */
+.rotater:nth-child(7) {
+  transform: rotate(247.5deg);
+}
+
+/* line 159, ../sass/index.scss */
 .menu.active .rotater:nth-child(7) .btn-icon {
-  transform: translateY(-10em) rotate(-282.85714deg);
+  transform: translateY(-10em) rotate(-247.5deg);
+}
+
+/* line 154, ../sass/index.scss */
+.rotater:nth-child(8) {
+  transform: rotate(292.5deg);
+}
+
+/* line 159, ../sass/index.scss */
+.menu.active .rotater:nth-child(8) .btn-icon {
+  transform: translateY(-10em) rotate(-292.5deg);
 }
 
 .logo{
