@@ -210,3 +210,46 @@ a, a:visited, a:active, a:focus {
 .menu.active .rotater:nth-child(7) .btn-icon {
   transform: translateY(-10em) rotate(-282.85714deg);
 }
+
+.logo{
+	position:absolute;
+	bottom: 2%;
+	width: 100%;
+	text-align: center;
+}
+.logoBeerRio, .logoJs{
+	font-family:'Martel Sans';
+}
+.logoBeerRio {
+	font-size: 60px;
+}
+.logoJs{
+	font-size: 100px;
+}
+
+/*mobile em pé*/
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+   
+    .logoBeerRio {
+	    font-size: 50px;
+	}
+	.logoJs{
+	    font-size: 70px;
+	}
+}
+
+/* Mobile e tablet deitados*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+        .logo{
+			text-align: left;
+			left:3%;
+			bottom: 0%;
+		}
+        .logoBeerRio {
+		 	font-size: 30px;
+		}
+		.logoJs{
+		 	font-size: 50px;
+		}
+    }
+}
